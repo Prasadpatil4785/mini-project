@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support System - Shivraj Shetkari Madat Yojana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Shivraj Shetkari Madat Yojana</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="loan.html">Commodity Loan</a></li>
+                <li><a href="market.html">Market Rates</a></li>
+                <li><a href="education.html">Education Hub</a></li>
+                <li><a href="support.html">Support System</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="support">
+            <h1>Swarajya Support System</h1>
+            <div class="module">
+                <h2>Complaint / Help Form</h2>
+                <form id="complaintForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <label for="issue">Issue:</label>
+                    <select id="issue">
+                        <option value="loan">Loan Problems</option>
+                        <option value="crop">Crop Damage</option>
+                        <option value="water">Water Supply</option>
+                        <option value="land">Land Records</option>
+                    </select>
+                    <label for="description">Description:</label>
+                    <textarea id="description" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="complaintMsg"></p>
+            </div>
+            <div class="module">
+                <h2>Volunteer Enrollment</h2>
+                <form id="volunteerForm">
+                    <label for="vname">Name:</label>
+                    <input type="text" id="vname" required>
+                    <label for="expertise">Expertise:</label>
+                    <select id="expertise">
+                        <option value="agri">Agri Expert</option>
+                        <option value="trainer">Trainer</option>
+                        <option value="support">Local Support</option>
+                    </select>
+                    <label for="contact">Contact:</label>
+                    <input type="text" id="contact" required>
+                    <button type="submit">Enroll</button>
+                </form>
+                <p id="volunteerMsg"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Shivraj Shetkari Madat Yojana</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

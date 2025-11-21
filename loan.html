@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commodity Loan - Shivraj Shetkari Madat Yojana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Shivraj Shetkari Madat Yojana</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="loan.html">Commodity Loan</a></li>
+                <li><a href="market.html">Market Rates</a></li>
+                <li><a href="education.html">Education Hub</a></li>
+                <li><a href="support.html">Support System</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="loan">
+            <h1>Commodity Loan (Shivaji-Style Modern Scheme)</h1>
+            <div class="loan-options">
+                <div class="loan-option" onclick="scrollToLoanCalculator()">
+                    <h2>Loan Against Stored Grain</h2>
+                    <p>Get loans based on your stored grain value.</p>
+                </div>
+                <div class="loan-option" onclick="openEmergencyModal()">
+                    <h2>Zero-Interest Emergency Loan</h2>
+                    <p>Emergency loans with no interest for farmers in need.</p>
+                </div>
+                <div class="loan-option" onclick="redirectWithFade('support.html')">
+                    <h2>Government Support Directory</h2>
+                    <p>Directory of government support programs.</p>
+                </div>
+                <div class="loan-option" onclick="toggleCropLoanInfo()">
+                    <h2>Crop-Loan Information</h2>
+                    <p>Information on various crop loans available.</p>
+                </div>
+                <div class="loan-option" onclick="toggleCropGuidance()">
+                    <h2>Crop Guidance</h2>
+                    <p>Detailed guidance on crop management and best practices.</p>
+                </div>
+                <div class="loan-option" onclick="toggleModernFarming()">
+                    <h2>Modern Farming</h2>
+                    <p>Insights into advanced farming techniques and technologies.</p>
+                </div>
+                <div class="loan-option" onclick="toggleFinancialEducation()">
+                    <h2>Financial Education</h2>
+                    <p>Education on loans, subsidies, insurance, and government schemes.</p>
+                </div>
+            </div>
+            <div id="cropLoanInfo" class="expandable">
+                <p>Crop Loan schemes include Kisan Credit Card, Seasonal Agricultural Operations, short-term, long-term, and crop-specific financing options.</p>
+            </div>
+            <div id="cropGuidance" class="expandable">
+                <p><strong>Soil Preparation:</strong> Test soil pH and nutrient levels. Use organic matter to improve soil structure and fertility.</p>
+                <p><strong>Organic Fertilizers:</strong> Apply compost, manure, and bio-fertilizers to enhance soil health without chemicals.</p>
+                <p><strong>Water Management:</strong> Implement rainwater harvesting and efficient irrigation to conserve water.</p>
+                <p><strong>Seed Selection:</strong> Choose high-yield, disease-resistant varieties suited to local climate.</p>
+                <p><strong>Disease Handling:</strong> Monitor crops regularly, use integrated pest management, and apply natural remedies.</p>
+            </div>
+            <div id="modernFarming" class="expandable">
+                <p><strong>Drip Irrigation:</strong> Delivers water directly to roots, reducing waste and improving efficiency.</p>
+                <p><strong>Hydroponics:</strong> Grow plants without soil using nutrient-rich water solutions for faster growth.</p>
+                <p><strong>Smart Farming using AI:</strong> Use sensors and AI to monitor crops, predict yields, and optimize resources.</p>
+                <p><strong>Drone Spraying:</strong> Precision application of pesticides and fertilizers using drones for better coverage.</p>
+            </div>
+            <div id="financialEducation" class="expandable">
+                <p><strong>Loan Guidance:</strong> Understand different loan types, interest rates, and repayment terms.</p>
+                <p><strong>Subsidies:</strong> Learn about government subsidies for seeds, fertilizers, and equipment.</p>
+                <p><strong>Insurance:</strong> Crop insurance covers losses due to natural disasters or pests.</p>
+                <p><strong>Government Schemes:</strong> Explore schemes like PM-KISAN for direct income support.</p>
+            </div>
+            <div class="feature" id="loanCalculator">
+                <h2>Loan Calculator</h2>
+                <form id="loanCalc">
+                    <label for="commodity">Commodity:</label>
+                    <select id="commodity">
+                        <option value="soyabean">Soyabean</option>
+                        <option value="wheat">Wheat</option>
+                        <option value="rice">Rice</option>
+                    </select>
+                    <label for="quantity">Quantity (kg):</label>
+                    <input type="number" id="quantity" required>
+                    <label for="price">Price per kg:</label>
+                    <input type="number" id="price" required>
+                    <button type="submit">Calculate Loan</button>
+                </form>
+                <p id="loanResult"></p>
+            </div>
+            <div class="feature">
+                <h2>Farmer Credit Score Concept</h2>
+                <p>Build your credit score through timely repayments.</p>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div id="emergencyModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeEmergencyModal()">&times;</span>
+                <h2>Zero-Interest Emergency Loan</h2>
+                <p>Farmers receive interest-free emergency loans under special hardship conditions.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Shivraj Shetkari Madat Yojana</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
