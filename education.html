@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Hub - Shivray Shetkari Madat Yojana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logo.jpeg" alt="Shivray Shetkari Madat Yojana Logo" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="loan.html">Commodity Loan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="market.html">Market Rates</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="education.html">Education Hub</a></li>
+                        <li class="nav-item"><a class="nav-link" href="support.html">Support System</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog(1).html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <section class="education">
+            <h1 class="text-center mb-4">Farmer Education Hub</h1>
+            <div class="accordion" id="educationAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cropGuidance" aria-expanded="true" aria-controls="cropGuidance">
+                            🌱 Crop Guidance
+                        </button>
+                    </h2>
+                    <div id="cropGuidance" class="accordion-collapse collapse show" data-bs-parent="#educationAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Soil Preparation:</strong> Test soil pH and nutrient levels. Use organic matter to improve soil structure and fertility.</p>
+                            <p><strong>Organic Fertilizers:</strong> Apply compost, manure, and bio-fertilizers to enhance soil health without chemicals.</p>
+                            <p><strong>Water Management:</strong> Implement rainwater harvesting and efficient irrigation to conserve water.</p>
+                            <p><strong>Seed Selection:</strong> Choose high-yield, disease-resistant varieties suited to local climate.</p>
+                            <p><strong>Disease Handling:</strong> Monitor crops regularly, use integrated pest management, and apply natural remedies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#modernFarming" aria-expanded="false" aria-controls="modernFarming">
+                            🧪 Modern Farming
+                        </button>
+                    </h2>
+                    <div id="modernFarming" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Drip Irrigation:</strong> Delivers water directly to roots, reducing waste and improving efficiency.</p>
+                            <p><strong>Hydroponics:</strong> Grow plants without soil using nutrient-rich water solutions for faster growth.</p>
+                            <p><strong>Smart Farming using AI:</strong> Use sensors and AI to monitor crops, predict yields, and optimize resources.</p>
+                            <p><strong>Drone Spraying:</strong> Precision application of pesticides and fertilizers using drones for better coverage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#financialEducation" aria-expanded="false" aria-controls="financialEducation">
+                            📊 Financial Education
+                        </button>
+                    </h2>
+                    <div id="financialEducation" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Loan Guidance:</strong> Understand different loan types, interest rates, and repayment terms.</p>
+                            <p><strong>Subsidies:</strong> Learn about government subsidies for seeds, fertilizers, and equipment.</p>
+                            <p><strong>Insurance:</strong> Crop insurance covers losses due to natural disasters or pests.</p>
+                            <p><strong>Government Schemes:</strong> Explore schemes like PM-KISAN for direct income support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Shivray Shetkari Madat Yojana</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>
